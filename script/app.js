@@ -226,8 +226,7 @@ function getStoreItems(){
     }
 }
 function closeNotification(sender){
-    let elmntParent = sender.parentElement;
-    elmntParent.style.display = "none";
+    sender.parentElement.style.display = "none";
 }
 function showAddItemPopUp(){
     document.getElementsByClassName('Add-item-modal')[0].style.display = "block";
@@ -271,6 +270,16 @@ function saveItem(){
                     };
                     inventory[i]['items'].push(item);
                     localStorage.setItem('inventory',JSON.stringify(inventory));
+                    let popUpInputs = document.getElementsByClassName('Add-item-modal-content')[0].getElementsByTagName('input');
+                    for(i=0; i<popUpInputs.length; i++){
+                        if(popUpInputs[i].id==="quantitylbl"){
+                            popUpInputs[i].value = 0;
+                        }
+                        else{
+                            popUpInputs[i].value = "";
+                        }
+                    }
+                    document.getElementById('descriptionlbl').value = "";
                     document.getElementsByClassName('Add-item-modal')[0].style.display = "none";
                     document.getElementById('itemAddedMsg').style.display = "flex";
                 }

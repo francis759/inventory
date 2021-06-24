@@ -38,22 +38,36 @@ body{
     background-color: blue;
     height: inherit;
 }
-.user{
-    height: 45px;
-    padding: 5px 10px;
-    align-items: center;
-    color: #fff;
-}
+
 .side-menu {
     width: 300px;
     background-color: blue;
 }
-.user-pic{
-    margin-right: 10px;
-    border: 1px solid #fff;
-    width: 32px;
-    height: 32px;
-    border-radius: 16px;
+.searchPane{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    background-color: #fefefe;
+    padding: 5px;
+    border-radius: 10px;
+}
+.searchPane img{
+    width: 18px;
+    padding: 2px;
+}
+.searchPane input{
+    outline: none;
+    border:none;
+    color: #CCC;
+}
+.companyName p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: tomato;
+    font-weight: 700;
+}
+.companyName p span{
+    color: rgb(21, 224, 89);
+    font-weight: 700;
 }
 .content{
     width: 100%;
@@ -62,18 +76,53 @@ body{
 .header-menu{
     display: flex;
     padding: 10px;
+    align-items: center;
     background-color: royalblue;
     height: 45px;
     align-items: center;
 }
-.menu-icon{
+.help-bell, .help-question{
+    position: absolute;
     cursor: pointer;
 }
-.menu-icon div{
-    margin: 3px 0;
-    width: 20px;
-    height: 3px;
-    background-color: #fff;
+.help-bell{
+    right: 180px;
+}
+.help-bell img, .help-question img{
+    height: 28px;
+}
+.help-question{
+    right: 140px;
+}
+.user{
+    margin-left: auto;
+    height: 45px;
+    padding: 5px 10px;
+    align-items: center;
+    color: #fff;
+}
+.user-pic{
+    margin-right: 10px;
+    border: 1px solid #fff;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    display: flex;
+}
+.user-pic img, .help img{
+    width: 25px;
+    height: 25px;
+}
+.inventory-logo{
+    display: flex;
+    height: 45px;
+    margin-left: 10px;
+}
+.inventory-logo img{
+    width: 40px;
+    height: 40px;
 }
 #page-holder{
     outline: none;
@@ -284,7 +333,9 @@ body{
 }
 .Add-item-modal-content textarea{
     height: 100px;
+    outline: none;
     width: 100%;
+    font-size: .8em;
     resize: none;
 }
 .add-item-btns{
@@ -307,6 +358,7 @@ body{
   background-color: dodgerblue;
   color: #fefefe;
   padding: 5px;
+  
 }
 #add-item-save-btn{
     background-color: blue;
@@ -317,7 +369,6 @@ body{
 }
 .filter .filter-items{
     display: flex;
-    border: 1px solid red;
 }
 .filter .filter-items-item h3{
     color: #444;
