@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Add Item</title>
+</head>
+<body class="additem-main-body"  onload="populateComboBox('categoriesHolder1')">
+    <h2 id="heading">Manage <span>Add Item</span></h2>
+    <div id="itemAddedMsg">
+        <img src="../images/toppng.com-white-check-mark-symbol-565x584.png" alt="">
+        <p>Added successfully</p>
+        <div id="additemclosebtn" onclick="closeNotification(this)">&times;</div>
+    </div>
+    <div class="btn" onclick="showAddItemPopUp()">Add</div>
+    <div class="Add-item-modal">
+        <div class="Add-item-modal-content" >
+            <h3>Name</h3>
+            <input type="text" name="" id="namelbl">
+            <h3>Category</h3>
+            <select id="categoriesHolder1"></select>
+            <h3>Description</h3>
+            <textarea name="descriptionlbl" id="descriptionlbl" cols="30" rows="10"></textarea>
+            <h3>Quantity</h3>
+            <input type="text" name="" value="0" id="quantitylbl">
+            <div class="add-item-btns">
+                <button id="add-item-save-btn" onclick="saveItem()">Save</button>
+                <button id="add-item-cancel-btn" onclick="closeAddItemPopUp()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="../script/app.js"></script>
+</body>
+</html>

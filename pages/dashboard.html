@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Dashboard</title>
+</head>
+<body class="dash-main-body" onload="getStoreItems()">
+    <h2 id="heading">Dashboard <span>Control panel</span></h2>
+    <section class="cartegory-section">
+        <p id="summary">Category summary</p>
+        <div class="tiles">
+            <div class="tile-item tile1">
+                <h3 class="quantity-label"></h3>
+                <p></p>
+                <div class="section-logo"><img src="../images/phones.png" alt=""></div>
+                <div class="info">
+                    <a href="#">More info</a>
+                    <img src="../images/forw.png" alt="">
+                </div>
+            </div>
+            <div class="tile-item tile2">
+                <h3 class="quantity-label"></h3>
+                <p></p>
+                <div class="section-logo"><img src="../images/home&office.png" alt=""></div>
+                <div class="info">
+                    <a href="#">More info</a>
+                    <img src="../images/forw.png" alt="">
+                </div>
+            </div>
+            <div class="tile-item tile3">
+                <h3 class="quantity-label"></h3>
+                <p></p>
+                <div class="section-logo"><img src="../images/comp.png" alt=""></div>
+                <div class="info">
+                    <a href="#">More info</a>
+                    <img src="../images/forw.png" alt="">
+                </div>
+            </div>
+            <div class="tile-item tile4">
+                <h3 class="quantity-label"></h3>
+                <p></p>
+                <div class="section-logo"><img src="../images/gamepad.png" alt=""></div>
+                <div class="info">
+                    <a href="#">More info</a>
+                    <img src="../images/forw.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section >
+    
+    <section class="cartegory-section">
+        <p id="summary">Items summary</p>
+        <div class="items-table-holder">
+            <table id="items-table">
+                <thead>
+                    <th>N<sub>o</sub></th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+    <script src="../script/app.js"></script>
+</body>
+</html>

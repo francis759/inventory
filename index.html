@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Inventory App</title>
+</head>
+<body onload="loadHome()">
+    <div class="main-container">
+        <div class="side-menu">
+            <div class="user">
+                <div class="user-pic"></div>
+                <h3>Admin</h3>
+            </div>
+            <div class="side-menu-content">
+                <div class="item" onclick="getPage(this)">
+                    <div></div>
+                    <img src="images/dash.png" alt="">
+                    <h3>Dashboard</h3>
+                </div>
+                <div class="item" onclick="getPage(this)">
+                    <div></div>
+                    <img src="images/add.png" alt="">
+                    <h3>Add Item</h3>
+                </div>
+                <div class="item" onclick="getPage(this)">
+                    <div></div>
+                    <img src="images/update1.png" alt="">
+                    <h3>Update Item</h3>
+                </div>
+                <div class="item" onclick="getPage(this)">
+                    <div></div>
+                    <img src="images/remove.png" alt="">
+                    <h3>Remove Item</h3>
+                </div>
+                <div class="item" onclick="getPage(this)">
+                    <div></div>
+                    <img src="images/update2.png" alt="">
+                    <h3>Update Stock</h3>
+                </div>
+                <div class="item" onclick="getPage(this)">
+                    <div></div>
+                    <img src="images/category.png" alt="">
+                    <h3>Category</h3>
+                </div>
+                <div class="item" onclick="getPage(this)">
+                    <div></div>
+                    <img src="images/product.png" alt="">
+                    <h3>Products</h3>
+                </div>
+                <div class="item" onclick="getPage(this)">
+                    <div></div>
+                    <img src="images/settings.png" alt="">
+                    <h3>Settings</h3>
+                    
+                </div>
+                <div class="item" onclick="getPage(this)">
+                    <div></div>
+                    <img src="images/Logout-icon.png" alt="">
+                    <h3>Logout</h3>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header-menu">
+                <div class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <iframe id="page-holder"></iframe>
+        </div>
+    </div>
+    <script src="./script/app.js"></script>
+</body>
+
+</html>

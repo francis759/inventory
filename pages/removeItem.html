@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Remove Item</title>
+</head>
+<body class="removeItem-main-body" id="updateItemPage" onload="populateComboBox('categoriesHolder2')">
+    <h2 id="heading">Manage <span>Remove Item</span></h2>
+    <section class="filter">
+        <p id="summary">Filter</p>
+        <div class="filter filter-items">
+            <div class="filter filter-items-item"><h3>Product Name:</h3>
+                <input type="text" name="" id=""></div>
+            <div class="filter filter-items-item"><h3>Category:</h3>
+                <select id="categoriesHolder2" onchange="removeItemPopulate(this)"></select></div>
+        </div>
+    </section>
+    <section>
+        <table>
+            <thead>
+                <th>No</th>
+                <th>Name</th>
+                <th>Item</th>
+                <th>No</th>
+                <th>No</th>
+            </thead>
+        </table>
+        <table id="removeItemsTable">
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+    <script src="../script/app.js"></script>
+</body>
+</html>
