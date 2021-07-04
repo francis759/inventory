@@ -46,18 +46,20 @@ body{
 .searchPane{
     display: flex;
     align-items: center;
-    width: 200px;
+    width: 250px;
     background-color: #fefefe;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .searchPane img{
     width: 18px;
     padding: 2px;
+    margin-right: 2px;
 }
 .searchPane input{
     outline: none;
     border:none;
+    width: 95%;
     color: #CCC;
 }
 .companyName p{
